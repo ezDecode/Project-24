@@ -1,0 +1,263 @@
+/* style.css */
+:root {
+    --dark: #1A1A1D;
+    --yellow: #FFE31A;
+    --teal: #257180;
+    --cream: #F2E5BF;
+}
+
+/* Navbar */
+nav {
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+}
+
+nav.glass {
+    background-color: rgba(26, 26, 29, 0.3) !important; /* Glass effect */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(242, 229, 191, 0.1);
+}
+
+nav a {
+    color: var(--cream) !important;
+}
+
+nav a:hover {
+    color: var(--yellow) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--dark);
+    padding-top: 80px;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    color: var(--cream) !important;
+}
+
+.hero-content h1 {
+    color: var(--yellow);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    color: var(--cream);
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Feature Cards */
+.feature-card {
+    background-color: var(--dark) !important;
+    border: 2px solid var(--teal);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.feature-card i {
+    color: var(--yellow) !important;
+}
+
+.feature-card h3 {
+    color: var(--cream) !important;
+}
+
+.feature-card p {
+    color: var(--cream) !important;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.primary-btn {
+    background-color: var(--yellow) !important;
+    color: var(--dark) !important;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--teal) !important;
+    color: var(--cream) !important;
+}
+
+.secondary-btn {
+    border: 2px solid var(--cream);
+    color: var(--cream);
+}
+
+.secondary-btn:hover {
+    background-color: var(--cream);
+    color: var(--dark);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+}
+
+footer h5 {
+    color: var(--yellow) !important;
+}
+
+footer p, footer a {
+    color: var(--cream) !important;
+}
+
+footer a:hover {
+    color: var(--yellow) !important;
+}
+
+/* Global Text Colors */
+.text-primary {
+    color: var(--yellow) !important;
+}
+
+.text-secondary {
+    color: var(--cream) !important;
+}
+
+.bg-primary {
+    background-color: var(--dark) !important;
+}
+
+.faq-item {
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    border-color: #FFCE32;
+  }
+  
+  .faq-answer {
+    transition: all 0.3s ease;
+  }
+  
+  .course-card {
+    transition: all 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  [data-count] {
+    transition: all 0.3s ease;
+  }
+/* Course Section Styles */
+.course-card {
+    background: rgba(29, 99, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(29, 99, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-8px);
+    border-color: #FFCE32;
+    box-shadow: 0 20px 40px rgba(29, 99, 255, 0.1);
+  }
+  
+  .course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(29, 99, 255, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .course-card:hover::before {
+    opacity: 1;
+  }
+  
+  .course-icon {
+    width: 4rem;
+    height: 4rem;
+    background: #FFCE32;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover .course-icon {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  
+  .course-icon i {
+    font-size: 2rem;
+    color: #0A1A2F;
+  }
+  
+  .course-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F5F7FA;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .course-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 2rem;
+    height: 2px;
+    background: #FFCE32;
+    transition: width 0.3s ease;
+  }
+  
+  .course-card:hover h3::after {
+    width: 3rem;
+  }
+  
+  .course-topics {
+    margin-top: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .course-topics li {
+    display: flex;
+    align-items: center;
+    color: rgba(245, 247, 250, 0.8);
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .course-topics li::before {
+    content: "→";
+    color: #FFCE32;
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-topics li:hover {
+    color: rgba(245, 247, 250, 1);
+    transform: translateX(4px);
+  }
+  
+  .course-topics li:hover::before {
+    transform: translateX(2px);
+    opacity: 1;
+  }
+  
+  .course-card:hover .course-topics li {
+    transform: translateY(0);
+    opacity: 1;
+  }

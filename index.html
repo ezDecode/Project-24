@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Capsule - Learn Machine Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#1A1A1D]" data-scroll-container>
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="#" class="flex items-center space-x-2">
+            <i class="bi bi-cpu text-[#FFCE32] text-2xl"></i>
+            <span class="text-xl font-bold text-white">ML Capsule</span>
+          </a>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="index.html"
+              class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+            >
+              Home
+            </a>
+            <a
+              href="pages/tutorials.html"
+              class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+            >
+              Tutorials
+            </a>
+            <a
+              href="pages/resources.html"
+              class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+            >
+              Resources
+            </a>
+            <a
+              href="pages/projects.html"
+              class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+            >
+              Projects
+            </a>
+            <a
+              href="pages/about.html"
+              class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+            >
+              About
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero content -->
+    <section class="min-h-screen relative pt-24 overflow-hidden">
+      <div class="container mx-auto px-6 relative z-10">
+        <div
+          class="flex flex-col items-center justify-center min-h-[80vh] text-center"
+        >
+          <div class="hero-content opacity-0"></div>
+          <h1
+            class="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-[#FFE31A] to-[#F2E5BF] text-transparent bg-clip-text"
+          >
+            Master Machine Learning
+            <span class="block mt-2">with ML Capsule</span>
+          </h1>
+
+          <p
+            class="text-xl md:text-2xl text-[#F2E5BF]/90 mb-12 max-w-3xl mx-auto leading-relaxed"
+          >
+            Your comprehensive platform for mastering ML concepts, algorithms,
+            and real-world applications through interactive learning
+          </p>
+
+          <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a
+              href="#courses"
+              class="cta-button px-8 py-4 bg-[#FFE31A] text-[#1A1A1D] rounded-lg font-bold hover:bg-[#F2E5BF] transition-all duration-300 shadow-lg shadow-[#FFE31A]/20"
+            >
+              Start Learning Now
+              <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+            <a
+              href="#featured"
+              class="cta-button px-8 py-4 border-2 border-[#FFE31A] text-[#FFE31A] rounded-lg font-bold hover:bg-[#FFE31A]/10 transition-all duration-300"
+            >
+              Explore Courses
+              <i class="bi bi-collection-play ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div
+          class="floating-orb absolute left-10 top-20 w-20 h-20 bg-[#FFE31A]/10 rounded-full blur-xl"
+        ></div>
+        <div
+          class="floating-orb absolute right-10 bottom-20 w-32 h-32 bg-[#257180]/20 rounded-full blur-xl"
+        ></div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 relative z-10">
+      <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-[#FFE31A] mb-4">
+            Why Choose ML Capsule?
+          </h2>
+          <p class="text-[#F2E5BF] text-xl max-w-2xl mx-auto">
+            Embark on your machine learning journey with our comprehensive
+            learning platform
+          </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Learn Card -->
+          <div
+            class="feature-card bg-[#257180]/20 backdrop-blur-sm p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#FFE31A] text-[#1A1A1D] transition-transform duration-300 hover:scale-110"
+            >
+              <i class="bi bi-book-half text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-[#FFE31A] mb-4">Learn</h3>
+            <p class="text-[#F2E5BF] mb-6">
+              Master ML concepts through comprehensive tutorials and interactive
+              guides
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-[#FFE31A] hover:text-white transition-colors duration-300"
+            >
+              Learn More
+              <i
+                class="bi bi-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-2"
+              ></i>
+            </a>
+          </div>
+
+          <!-- Practice Card -->
+          <div
+            class="feature-card bg-[#257180]/20 backdrop-blur-sm p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#FFE31A] text-[#1A1A1D] transition-transform duration-300 hover:scale-110"
+            >
+              <i class="bi bi-code-square text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-[#FFE31A] mb-4">Practice</h3>
+            <p class="text-[#F2E5BF] mb-6">
+              Apply your knowledge with hands-on coding exercises and projects
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-[#FFE31A] hover:text-white transition-colors duration-300"
+            >
+              Start Coding
+              <i
+                class="bi bi-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-2"
+              ></i>
+            </a>
+          </div>
+
+          <!-- Grow Card -->
+          <div
+            class="feature-card bg-[#257180]/20 backdrop-blur-sm p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#FFE31A] text-[#1A1A1D] transition-transform duration-300 hover:scale-110"
+            >
+              <i class="bi bi-graph-up text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-[#FFE31A] mb-4">Grow</h3>
+            <p class="text-[#F2E5BF] mb-6">
+              Track your progress and evolve your skills with personalized
+              learning paths
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-[#FFE31A] hover:text-white transition-colors duration-300"
+            >
+              View Progress
+              <i
+                class="bi bi-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-2"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Course Categories Section -->
+    <section class="py-24 bg-gradient-to-b from-[#0A1A2F] to-[#1D63FF]/10">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-[#FFCE32] mb-4">
+            Explore Our Courses
+          </h2>
+          <p class="text-xl text-[#F5F7FA]/80 max-w-2xl mx-auto">
+            Comprehensive learning paths for every stage of your ML journey
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Fundamentals -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h3>ML Fundamentals</h3>
+            <ul class="course-topics">
+              <li>Introduction to Machine Learning</li>
+              <li>Mathematics for ML</li>
+              <li>Python Programming</li>
+              <li>Data Preprocessing</li>
+            </ul>
+          </div>
+    
+          <!-- Algorithms -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="bi bi-braces"></i>
+            </div>
+            <h3>ML Algorithms</h3>
+            <ul class="course-topics">
+              <li>Supervised Learning</li>
+              <li>Unsupervised Learning</li>
+              <li>Reinforcement Learning</li>
+              <li>Ensemble Methods</li>
+            </ul>
+          </div>
+    
+          <!-- Deep Learning -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h3>Deep Learning</h3>
+            <ul class="course-topics">
+              <li>Neural Networks</li>
+              <li>CNN & Computer Vision</li>
+              <li>RNN & NLP</li>
+              <li>Transformers</li>
+            </ul>
+          </div>
+    
+          <!-- MLOps -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="bi bi-gear"></i>
+            </div>
+            <h3>MLOps</h3>
+            <ul class="course-topics">
+              <li>Model Deployment</li>
+              <li>Model Monitoring</li>
+              <li>CI/CD for ML</li>
+              <li>Infrastructure Management</li>
+            </ul>
+          </div>
+    
+          <!-- Specialized Topics -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="bi bi-stars"></i>
+            </div>
+            <h3>Specialized Topics</h3>
+            <ul class="course-topics">
+              <li>Time Series Analysis</li>
+              <li>Recommendation Systems</li>
+              <li>Natural Language Processing</li>
+              <li>Computer Vision</li>
+            </ul>
+          </div>
+    
+          <!-- Projects -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3>Real-World Projects</h3>
+            <ul class="course-topics">
+              <li>Image Classification</li>
+              <li>Sentiment Analysis</li>
+              <li>Fraud Detection</li>
+              <li>Recommender Systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center text-[#FFCE32] mb-16"
+        >
+          What Our Students Say
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial Card -->
+          <div
+            class="bg-[#1D63FF]/5 p-8 rounded-2xl border border-[#1D63FF]/20"
+          >
+            <div class="flex items-center mb-6">
+              <img
+                src="path/to/avatar.jpg"
+                alt="Student"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="text-[#F5F7FA] font-semibold">John Doe</h4>
+                <p class="text-[#F5F7FA]/60 text-sm">Data Scientist</p>
+              </div>
+            </div>
+            <p class="text-[#F5F7FA]/80">
+              "The structured learning path helped me transition from a beginner
+              to a confident ML practitioner."
+            </p>
+          </div>
+          <!-- Add more testimonials -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gradient-to-t from-[#0A1A2F] to-[#1D63FF]/5">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-[#FFCE32] mb-16">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item border border-[#1D63FF]/20 rounded-lg p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <span class="text-xl font-semibold text-[#F5F7FA]">How do I get started?</span>
+              <i class="bi bi-plus text-[#FFCE32]"></i>
+            </button>
+            <div class="faq-answer hidden mt-4 text-[#F5F7FA]/70">
+              Start with our ML Fundamentals course and follow our structured learning path.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item border border-[#1D63FF]/20 rounded-lg p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <span class="text-xl font-semibold text-[#F5F7FA]">What prerequisites do I need?</span>
+              <i class="bi bi-plus text-[#FFCE32]"></i>
+            </button>
+            <div class="faq-answer hidden mt-4 text-[#F5F7FA]/70">
+              Basic Python programming and high school mathematics is recommended.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item border border-[#1D63FF]/20 rounded-lg p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <span class="text-xl font-semibold text-[#F5F7FA]">How long does it take to complete a course?</span>
+              <i class="bi bi-plus text-[#FFCE32]"></i>
+            </button>
+            <div class="faq-answer hidden mt-4 text-[#F5F7FA]/70">
+              Each course is self-paced, typically taking 4-6 weeks with 5-7 hours weekly commitment.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item border border-[#1D63FF]/20 rounded-lg p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <span class="text-xl font-semibold text-[#F5F7FA]">Do you provide certificates?</span>
+              <i class="bi bi-plus text-[#FFCE32]"></i>
+            </button>
+            <div class="faq-answer hidden mt-4 text-[#F5F7FA]/70">
+              Yes, you'll receive a verified certificate upon completing each course and project.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item border border-[#1D63FF]/20 rounded-lg p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <span class="text-xl font-semibold text-[#F5F7FA]">What kind of projects will I build?</span>
+              <i class="bi bi-plus text-[#FFCE32]"></i>
+            </button>
+            <div class="faq-answer hidden mt-4 text-[#F5F7FA]/70">
+              You'll work on real-world projects like image classification, sentiment analysis, and recommendation systems.
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item border border-[#1D63FF]/20 rounded-lg p-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <span class="text-xl font-semibold text-[#F5F7FA]">Is there job placement assistance?</span>
+              <i class="bi bi-plus text-[#FFCE32]"></i>
+            </button>
+            <div class="faq-answer hidden mt-4 text-[#F5F7FA]/70">
+              We provide career guidance, resume reviews, and connections to our hiring partners.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24">
+      <div class="container mx-auto px-6">
+        <div
+          class="bg-gradient-to-r from-[#1D63FF] to-[#0A1A2F] rounded-3xl p-12 text-center"
+        >
+          <h2 class="text-4xl md:text-5xl font-bold text-[#F5F7FA] mb-6">
+            Ready to Start Your ML Journey?
+          </h2>
+          <p class="text-xl text-[#F5F7FA]/80 mb-8 max-w-2xl mx-auto">
+            Join thousands of students who are already learning and building
+            with ML Capsule
+          </p>
+          <a
+            href="#"
+            class="inline-block px-8 py-4 bg-[#FFCE32] text-[#0A1A2F] rounded-lg font-bold hover:bg-[#F5F7FA] transition-all duration-300"
+          >
+            Get Started Free
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1D] text-[#F2E5BF] py-16">
+      <div class="container mx-auto px-6">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <!-- Brand Section -->
+          <div class="space-y-6">
+            <div class="flex items-center space-x-2">
+              <i class="bi bi-cpu text-[#FFE31A] text-2xl"></i>
+              <h5 class="text-2xl font-bold text-[#FFE31A]">ML Capsule</h5>
+            </div>
+            <p class="text-[#F2E5BF]/80">
+              Empowering the next generation of ML engineers with cutting-edge
+              education
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-[#F2E5BF]/60 hover:text-[#FFE31A] transition-colors duration-300"
+              >
+                <i class="bi bi-github text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-[#F2E5BF]/60 hover:text-[#FFE31A] transition-colors duration-300"
+              >
+                <i class="bi bi-twitter text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-[#F2E5BF]/60 hover:text-[#FFE31A] transition-colors duration-300"
+              >
+                <i class="bi bi-linkedin text-xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h5 class="text-xl font-semibold mb-6 text-[#FFE31A]">
+              Quick Links
+            </h5>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+                  >Tutorials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+                  >Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h5 class="text-xl font-semibold mb-6 text-[#FFE31A]">Contact</h5>
+            <ul class="space-y-4">
+              <li class="flex items-center space-x-3">
+                <i class="bi bi-envelope text-[#FFE31A]"></i>
+                <a
+                  href="mailto:support@mlcapsule.com"
+                  class="text-[#F2E5BF]/80 hover:text-[#FFE31A] transition-colors duration-300"
+                  >support@mlcapsule.com</a
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="bi bi-geo-alt text-[#FFE31A]"></i>
+                <span class="text-[#F2E5BF]/80"
+                  >Your Location, City, Country</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h5 class="text-xl font-semibold mb-6 text-[#FFE31A]">
+              Newsletter
+            </h5>
+            <p class="text-[#F2E5BF]/80 mb-4">
+              Stay updated with our latest courses and ML news
+            </p>
+            <form class="space-y-4">
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full px-4 py-2 bg-[#257180]/20 text-[#F2E5BF] rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#FFE31A] placeholder-[#F2E5BF]/50"
+                />
+                <button
+                  class="bg-[#FFE31A] text-[#1A1A1D] px-6 py-2 rounded-r-lg font-semibold hover:bg-[#257180] hover:text-[#F2E5BF] transition-all duration-300"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-[#F2E5BF]/10 mt-12 pt-8 text-center">
+          <p class="text-[#F2E5BF]/60">
+            © 2024 ML Capsule. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Include Locomotive Scroll JS and Particle JS   -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fetch.js"></script>
+  </body>
+</html>
